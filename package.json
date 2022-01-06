@@ -1,0 +1,33 @@
+{
+  "name": "wetube",
+  "version": "1.0.0",
+  "description": "The best way to watch videos!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChungHaLee/wetube-reloaded.git"
+  },
+  "scripts": {
+    "dev": "nodemon --exec babel-node src/server.js"
+  },
+  "keywords": [
+    "wetube"
+  ],
+  "author": "ChungHa<chunghalee@gm.gist.ac.kr>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ChungHaLee/wetube-reloaded/issues"
+  },
+  "homepage": "https://github.com/ChungHaLee/wetube-reloaded#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "npm": "^8.3.0",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.5",
+    "@babel/node": "^7.16.5",
+    "@babel/preset-env": "^7.13.10",
+    "nodemon": "^2.0.15"
+  }
+}
