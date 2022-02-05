@@ -1,5 +1,4 @@
 // node.js 의 프레임워크인 express 를 가져온다
-// 
 import express from "express";
 import morgan from "morgan";
 
@@ -8,9 +7,6 @@ import morgan from "morgan";
 import globalRouter from "./routers/globalRouter";
 import userRouter from './routers/userRouter';
 import videoRouter from './routers/videoRouter';
-
-// 백엔드 관습: 포트 4000번
-const PORT = 4000;
 
 // express application 생성
 const app = express();
@@ -28,12 +24,11 @@ app.use(logger);
 
 // express - form 입력을 받을 수 있도록 해주기
 // sexy middleware: extended
+// urlencoded: html form 을 json 형식으로 통역 >> router 전에 있기 때문에
+// urlencoded 를 통해 json 형식으로 바뀐 req.body가 router 로 들어가게 된다
 app.use(express.urlencoded({ extended: true }));
 app.use('/', globalRouter);
 app.use("/videos", videoRouter);
 app.use("/users", userRouter);
 
-const handleListening = () =>
-  console.log(`✅ Server listening on port http://localhost:${PORT} 🚀 `);
-
-app.listen(PORT, handleListening);
+export default app;

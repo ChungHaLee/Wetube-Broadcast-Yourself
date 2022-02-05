@@ -1,0 +1,27 @@
+{
+    "javascript.format.enable": false,
+
+    "editor.formatOnSave": true,
+
+    "explorer.confirmDelete": false,
+
+    "workbench.colorTheme": "Material Theme Darker",
+
+    "emojisense.languages": {
+
+        "markdown": true,
+
+        "git-commit": false,
+
+        "plaintext": false,
+
+        "json": true,
+
+        "javascript": true
+
+    },
+
+    "javascript.validate.enable": false
+
+
+}

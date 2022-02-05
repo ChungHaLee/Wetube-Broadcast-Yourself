@@ -2,9 +2,7 @@ extends base.pug
 include mixins/video
 
 block content
-    h2 Welcome to Wetube. Here's the top trending videos.
-    ul
-        each info in videos
-            +video(info)
-        else
-            h3 Sorry. No videos are found.
+    each info in videos
+        +video(info)
+    else
+        h3 Sorry. No videos are found.

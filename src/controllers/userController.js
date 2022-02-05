@@ -8,4 +8,4 @@ export const userSee = (req, res) => {
     console.log(req.params);
     return res.send(`This is a User #${req.params.id}`)
 };
-export const userLogout = (req, res) => res.send('User Logging Out');
+export const userLogout = (req, res) => res.send( 'User Logging Out');
